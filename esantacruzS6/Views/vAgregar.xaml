@@ -15,8 +15,8 @@
         <Entry x:Name="txtEdad" Placeholder="Ingrese la edad" />
         <Button
             x:Name="btnAgregar"
-            Clicked="btnAgregar_Clicked"
-            Text="btnEstudiante" />
+            Text="Agregar Estudiante"
+            Clicked="btnAgregar_Clicked"  />           
 
     </VerticalStackLayout>
 </ContentPage>

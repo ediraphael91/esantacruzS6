@@ -9,6 +9,7 @@
             FontSize="20"
             HorizontalTextAlignment="Center"
             Text="Actualizar/Eliminar Estudiante" />
+
         <Entry x:Name="txtCodigo" IsReadOnly="True" />
         <Entry x:Name="txtNombre" />
         <Entry x:Name="txtApellido" />
@@ -28,7 +29,12 @@
                 Grid.Column="0"
                 Clicked="btnActualizar_Clicked"
                 Text="Actualizar" />
-
+            <Button
+                x:Name="btnEliminar"
+                Grid.Row="0"
+                Grid.Column="1"
+                Clicked="btnEliminar_Clicked"
+                Text="Eliminar" />
         </Grid>
     </VerticalStackLayout>
 </ContentPage>

@@ -29,7 +29,7 @@
         </Grid>
 
         <!-- Lista de estudiantes -->
-        <ListView x:Name="listaEstudiantes">
+        <ListView x:Name="listaEstudiantes" ItemSelected="listaEstudiantes_ItemSelected">
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell>
@@ -53,5 +53,10 @@
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
+
+        <Button x:Name="btnEstudiante"
+                Text="Agregar estudiante"
+                Clicked="btnEstudiante_Clicked"/>
+
     </VerticalStackLayout>
 </ContentPage>

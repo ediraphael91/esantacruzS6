@@ -17,4 +17,9 @@ public partial class ActEliminar : ContentPage
     {
 		
     }
+
+    private void btnEliminar_Clicked(object sender, EventArgs e)
+    {
+
+    }
 }
