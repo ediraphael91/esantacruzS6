@@ -6,10 +6,29 @@
     Title="vEstudiante">
     <VerticalStackLayout Padding="20" Spacing="20">
         <Label
-            FontSize="20"
+            FontSize="30"
             HorizontalTextAlignment="Center"
-            Text="Semana 6: Consumo WS" />
+            Text="Semana 6: Consumo WS" FontAttributes="Bold" TextColor="Blue"/>
 
+        <!-- Encabezados de la tabla -->
+        <Grid Padding="10">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <Label Grid.Row="0" Grid.Column="0" Text="Código" FontAttributes="Bold" TextColor="Red"/>
+            <Label Grid.Row="0" Grid.Column="1" Text="Nombre" FontAttributes="Bold" TextColor="Red"/>
+            <Label Grid.Row="0" Grid.Column="2" Text="Apellido" FontAttributes="Bold" TextColor="Red"/>
+            <Label Grid.Row="0" Grid.Column="3" Text="Edad" FontAttributes="Bold" TextColor="Red"/>
+        </Grid>
+
+        <!-- Lista de estudiantes -->
         <ListView x:Name="listaEstudiantes">
             <ListView.ItemTemplate>
                 <DataTemplate>
@@ -17,18 +36,18 @@
                         <Grid Padding="10">
                             <Grid.RowDefinitions>
                                 <RowDefinition Height="Auto"/>
-                                <RowDefinition Height="Auto"/>
-                                <RowDefinition Height="Auto"/>
-                                <RowDefinition Height="Auto"/>
                             </Grid.RowDefinitions>
                             <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="*" />
                             </Grid.ColumnDefinitions>
 
                             <Label Grid.Row="0" Grid.Column="0" Text="{Binding codigo}" />
-                            <Label Grid.Row="1" Grid.Column="0" Text="{Binding nombre}" />
-                            <Label Grid.Row="2" Grid.Column="0" Text="{Binding apellido}" />
-                            <Label Grid.Row="3" Grid.Column="0" Text="{Binding edad}" />
+                            <Label Grid.Row="0" Grid.Column="1" Text="{Binding nombre}" />
+                            <Label Grid.Row="0" Grid.Column="2" Text="{Binding apellido}" />
+                            <Label Grid.Row="0" Grid.Column="3" Text="{Binding edad}" />
                         </Grid>
                     </ViewCell>
                 </DataTemplate>
