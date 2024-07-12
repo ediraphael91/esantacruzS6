@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="esantacruzS6.Views.ActEliminar"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="ActEliminar">
+    <VerticalStackLayout>
+        <Label
+            FontSize="20"
+            HorizontalTextAlignment="Center"
+            Text="Actualizar/Eliminar Estudiante" />
+        <Entry x:Name="txtCodigo" IsReadOnly="True" />
+        <Entry x:Name="txtNombre" />
+        <Entry x:Name="txtApellido" />
+        <Entry x:Name="txtEdad" Keyboard="Numeric" />
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition />
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+            <Button
+                x:Name="btnActualizar"
+                Grid.Row="0"
+                Grid.Column="0"
+                Clicked="btnActualizar_Clicked"
+                Text="Actualizar" />
+
+        </Grid>
+    </VerticalStackLayout>
+</ContentPage>
